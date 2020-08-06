@@ -63,5 +63,5 @@
     <meta name="twitter:description" content="{{ page.content | strip_html | strip_newlines | truncate: 160 }}">
     {% if site.theme_settings.twitter %}<meta name="twitter:creator" content="@{{ site.theme_settings.twitter }}">{% endif %}
     <meta name="twitter:card" content="{% unless page.thumbnail %}summary_large_image{% else %}summary{% endunless %}">
-    <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/kylehao/blog.8f.pw/8f/{% if page.thumbnail %}{{ page.thumbnail }}{% else %}{{ page.feature-img | default: site.header_feature_image }}{% endif %}">
+    <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/kylehao/blog.8f.pw/{% if page.thumbnail %}{{ page.thumbnail }}{% else %}{{ page.feature-img | default: site.header_feature_image }}{% endif %}">
 </head>
