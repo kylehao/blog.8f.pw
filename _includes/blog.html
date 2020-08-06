@@ -4,7 +4,7 @@
         {% if post.thumbnail %}
         <div class="post-img">
             <a aria-label="{{ post.title }}" href="{{ post.url | relative_url }}">
-                <img alt="{{ post.title }}" src="{{ post.thumbnail | relative_url }}">
+                <img alt="{{ post.title }}" src="https://cdn.jsdelivr.net/gh/kylehao/blog.8f.pw/{{ post.thumbnail | relative_url }}">
             </a>
         </div>
         {% endif %}
