@@ -56,7 +56,7 @@
 
     <!-- seo tags -->
     {% seo %}
-    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kylehao/blog.8f.pw/8f/{% if page.thumbnail %}{{ page.thumbnail }}{% else %}{{ page.feature-img | default: site.header_feature_image }}{% endif %}">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/kylehao/blog.8f.pw/{% if page.thumbnail %}{{ page.thumbnail }}{% else %}{{ page.feature-img | default: site.header_feature_image }}{% endif %}">
 
     <!-- Twitter Cards -->
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.theme_settings.title }}{% endif %}">
